@@ -1,0 +1,42 @@
+HOLA MUNDO CON Thymelife
+
+Para este ejemplo crear una copia del proyecto. Renombrarlo a HolaMundoThymeleaf.
+Carpeata Spring/Leccion02
+
+Seguir con el ejemplo anterior, a continuación se usarán Spring MVC, utilizando
+la tecnología de presentación Thymelife, el controlador en lugar de ser Rest se usará 
+un controlador MVC @Controller se importa de stereotype, utiliza la misma sintaxis, seguimos con el GetMapping
+
+Ahora en lugar de retornar un texto cualquiera, vamos a retornar el nombre de la página.
+
+public String inicio()
+return "index" el cual será html, que se creará después. 
+
+Al utilizar servlets no se necesita exportar nada porque controller y getmapping lo traen por defecto
+
+
+Ahora en resources, en la carpeta templates agregar un archivo HTML llamado index, dentro de la carpeta templates.
+
+Un html simple, dejando los charset, con titulo Inicio. en el cuerpo agregar un tituloque es un mensaje de inicio corremos la
+aplicación y se podrá observar el despliegue de la applicacion 
+
+en properties, agregar spring.main.banner-mode=off, para que no de tanta información y se vea más ordenado en consola.abrimos el localhost
+con / para ingresar al path de inicio.
+
+a la etiqueta <html xmlns:th="http://www.thymeleaf.org"></html>
+se agrega para manejar información dinámica. 
+
+agregar un parrafo para verificar que funciona
+
+Esto es un componente de Thymeleaf
+<p th:text="Saludos"></p>
+
+Solo para ver que funciona correctamente
+
+Thymeleaf hace caché automaticamente, 
+
+en applicacion.properties agregar 
+
+spring.thymeleaf.cache=false
+
+<p th:text="Adios"></p>

@@ -16,7 +16,9 @@ The application automatically deploys the information as we can see in console d
 
 ![Rest Controller](/SpringBoot/img/1_2_DeployConsole.png)
 
-The format on console is due to application.properties, we can modify the format show info this is optional. 
+The format on console is due to application.properties, we can modify the format show info this is optional.
+
+application.properties:
 
 ```java
 spring.application.name=HolaMundoSpring

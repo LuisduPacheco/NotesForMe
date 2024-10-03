@@ -1,0 +1,28 @@
+El framew de Spring es un contenedor de clases
+Para que Spring reconozca las clases y funcione correctamente las 
+clases deben estar dentro del mismo paquete que la clase anotada con 
+@SpringBootApplication en este ejemplo el paquete principal es mx.com.gm, también funciona si 
+tenemos un sub paquete. 
+
+Crear una nueva Clase, ControladorInicio.java y le colocamos
+la anotación @RestController
+
+craamos un método publico con returno string llamado inicio()
+
+lo mapeamos con @GetMapping("/") para que retorne la cadena Hola mundo con Spring 
+
+La aplicación automaticamente se despliega debido a las devtools que se agregaron
+al iniciar el proyecto y agregarle dicha dependencia
+
+a la clase ControladorInicio agregamos @Slf4j que viene de lombok extern
+tenemos acceso a log.infor("ejecutando rest")
+
+esto es para mostrar mensajes a nivel de info en la consola.
+
+Cualquier cambio se reflejará en automatico en la web.
+
+OTRA PARTE importante
+application.properties viene vacía o con el nombre del proyecto, 
+la carpeta static se usa para elementos staticos de las apps web 
+y templates se usa para agregar archivos html utilizando Thymelife
+ 
